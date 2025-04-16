@@ -5,7 +5,7 @@ import { FaGithub, FaHome, FaUserAlt, FaProjectDiagram, FaPhone } from "react-ic
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto navbar bg-transparent fixed z-50 backdrop-blur-md px-4">
+    <div className="container mx-auto navbar bg-transparent fixed top-0 z-50 backdrop-blur-md px-4">
       <div className="flex-1">
         <Link
           to="/"
