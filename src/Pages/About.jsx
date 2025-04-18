@@ -5,6 +5,7 @@ import { FaBookOpen } from "react-icons/fa";
 import { GiCricketBat } from "react-icons/gi";
 import { TbPlaneInflight } from "react-icons/tb";
 import SkillCards from "../Components/SkillCards";
+import image from "../assets/IMG_20250221_023934_725.webp";
 
 const About = () => {
   useEffect(() => {
@@ -60,7 +61,7 @@ const About = () => {
           <div className="flex-1 flex justify-center" data-aos="zoom-in">
             <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-amber-400 hover:scale-105 transition-transform duration-300">
               <img
-                src="/src/assets/IMG_20250221_023934_725.webp"
+                src={image}
                 alt="Haad Sheikh"
                 className="w-full h-full object-cover brightness-90"
               />

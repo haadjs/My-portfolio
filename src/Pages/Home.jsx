@@ -9,6 +9,9 @@ import {
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaRegHandPaper } from "react-icons/fa";
+import png from "../assets/image.png";
+import webp from "../assets/original-268a6cf515d75b2bdba602dbb0426dd4.webp";
+
 const Home = () => {
   useEffect(() => {
     AOS.init({
@@ -61,7 +64,7 @@ const Home = () => {
 
         <div className="mt-10 md:mt-0" data-aos="fade-left">
           <img
-            src="/src/assets/original-268a6cf515d75b2bdba602dbb0426dd4.webp"
+            src={webp}
             alt="Profile"
             className="w-72 h-72 object-cover rounded-full shadow-xl border-4 border-amber-400 hover:scale-105 transition-transform duration-300"
           />
@@ -93,7 +96,7 @@ const Home = () => {
 
         <div className="flex justify-center mt-8" data-aos="zoom-in">
           <img
-            src="/src/assets/image.png"
+            src={png}
             alt="Self"
             className="w-80 h-80 object-cover rounded-full shadow-xl border-4 border-amber-200"
           />
