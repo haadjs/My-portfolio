@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className="flex-1">
         <Link
           to="/"
-          className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-800 via-emerald-500 to-lime-400 drop-shadow-md animate-pulse"
+          className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-500 to-lime-200 drop-shadow-md animate-pulse"
         >
           Haad<span className="text-black">..</span>
         </Link>
