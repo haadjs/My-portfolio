@@ -1,16 +1,10 @@
 import React, { useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
-import {
-  FaHandPeace,
-  FaInstagram,
-  FaFacebook,
-  FaLinkedin,
-} from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaLinkedin } from "react-icons/fa";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { FaRegHandPaper } from "react-icons/fa";
-import png from "../assets/image.png";
-import webp from "../assets/original-268a6cf515d75b2bdba602dbb0426dd4.webp";
+import webp from "../assets/original-268a6cf515d75b2bdba602dbb0426dd4.webp"; // Profile image
+import png from "../assets/image.png"; // Self image
 
 const Home = () => {
   useEffect(() => {
@@ -22,17 +16,15 @@ const Home = () => {
   }, []);
 
   return (
-    <>
+    <div className="bg-gradient-to-br from-green-800 via-green-900 to-black text-white">
       {/* Hero Section */}
-      <div className="min-h-screen flex flex-col md:flex-row items-center justify-between px-8 md:px-16 bg-gradient-to-br from-green-800 via-green-900 to-black text-white transition-all duration-700 ease-in-out">
+      <div className="min-h-screen px-6 md:px-16 py-20 flex flex-col md:flex-row items-center justify-between">
         <div
-          className="max-w-xl space-y-6 text-center md:text-left"
+          className="max-w-2xl space-y-6 text-center md:text-left"
           data-aos="fade-right"
         >
-          <div className="flex justify-center md:justify-start items-center space-x-4">
-            <h3 className="text-2xl md:text-3xl font-bold text-amber-400">
-              Hello World
-            </h3>
+          <div className="flex justify-center md:justify-start items-center gap-4">
+            <h3 className="text-3xl font-bold text-amber-400">Hello World</h3>
             <div className="text-4xl text-amber-300 animate-pulse">👋🏻</div>
           </div>
 
@@ -63,24 +55,24 @@ const Home = () => {
         </div>
 
         <div className="mt-10 md:mt-0" data-aos="fade-left">
-          <img
-            src={webp}
-            alt="Profile"
-            className="w-72 h-72 object-cover rounded-full shadow-xl border-4 border-amber-400 hover:scale-105 transition-transform duration-300"
-          />
+          <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-amber-400 hover:scale-105 transition-transform duration-300">
+            <img
+              src={webp}
+              alt="Profile"
+              className="w-full h-full object-cover brightness-90"
+            />
+            <div className="absolute inset-0 rounded-full border-4 border-gradient-to-tr from-amber-400 via-green-400 to-emerald-500 opacity-60"></div>
+          </div>
         </div>
       </div>
 
       {/* Introduction Section */}
-      <div className="bg-gradient-to-br from-green-900 via-green-950 to-black text-white py-16 transition-all duration-700 ease-in-out">
-        <div
-          className="max-w-4xl mx-auto text-center px-6 md:px-0"
-          data-aos="fade-up"
-        >
+      <div className="py-20">
+        <div className="max-w-4xl mx-auto text-center px-6" data-aos="fade-up">
           <h1 className="text-3xl md:text-4xl font-extrabold text-amber-300 mb-6">
             LET ME INTRODUCE MYSELF
           </h1>
-          <p className="text-lg text-gray-200 mb-4">
+          <p className="text-lg text-gray-300 mb-4">
             I’ve been into programming since childhood, but turned it into a
             career in 2024.
           </p>
@@ -88,33 +80,36 @@ const Home = () => {
             I chose MERN stack for its power and love working with frameworks
             and libraries.
           </p>
-          <p className="text-lg text-gray-300">
+          <p className="text-lg text-gray-400">
             Skilled in HTML, CSS, JavaScript, React.js, and React Native for web
             and mobile apps.
           </p>
         </div>
 
-        <div className="flex justify-center mt-8" data-aos="zoom-in">
-          <img
-            src={png}
-            alt="Self"
-            className="w-80 h-80 object-cover rounded-full shadow-xl border-4 border-amber-200"
-          />
+        <div className="flex justify-center mt-10" data-aos="zoom-in">
+          <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-amber-200">
+            <img
+              src={png}
+              alt="Self"
+              className="w-full h-full object-cover brightness-90"
+            />
+            <div className="absolute inset-0 rounded-full border-4 border-gradient-to-tr from-amber-400 via-green-400 to-emerald-500 opacity-60"></div>
+          </div>
         </div>
       </div>
 
       {/* Contact Section */}
-      <div className="bg-gradient-to-br from-black via-green-900 to-green-800 text-white py-16 transition-all duration-700 ease-in-out">
-        <div className="max-w-2xl mx-auto text-center" data-aos="fade-up">
+      <div className="py-20">
+        <div className="max-w-3xl mx-auto text-center" data-aos="fade-up">
           <h1 className="text-3xl md:text-4xl font-bold text-amber-300 mb-6">
             Got a question or just want to chat? Find me below!
           </h1>
-          <div className="flex justify-center space-x-8 mt-6 text-3xl">
+          <div className="flex justify-center gap-8 mt-6 text-3xl">
             <a
               href="https://www.instagram.com/haad._glimpse._/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-pink-500 transition-transform duration-300 hover:scale-110"
+              className="hover:text-pink-500 hover:scale-110 transition duration-300"
             >
               <FaInstagram />
             </a>
@@ -122,7 +117,7 @@ const Home = () => {
               href="https://www.facebook.com/profile.php?id=61555704857977"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-500 transition-transform duration-300 hover:scale-110"
+              className="hover:text-blue-500 hover:scale-110 transition duration-300"
             >
               <FaFacebook />
             </a>
@@ -130,25 +125,14 @@ const Home = () => {
               href="https://www.linkedin.com/in/haad-sheikh/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-300 transition-transform duration-300 hover:scale-110"
+              className="hover:text-blue-300 hover:scale-110 transition duration-300"
             >
               <FaLinkedin />
             </a>
           </div>
         </div>
       </div>
-
-      {/* Tailwind Custom Animation (wiggle only) */}
-      <style>{`
-        @keyframes wiggle {
-          0%, 100% { transform: rotate(-10deg); }
-          50% { transform: rotate(10deg); }
-        }
-        .animate-wiggle {
-          animation: wiggle 1s infinite;
-        }
-      `}</style>
-    </>
+    </div>
   );
 };
 
