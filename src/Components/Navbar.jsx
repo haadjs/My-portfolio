@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { FaGithub, FaHome, FaUserAlt, FaProjectDiagram, FaPhone } from "react-icons/fa";
+import {
+  FaGithub,
+  FaHome,
+  FaUserAlt,
+  FaProjectDiagram,
+  FaPhone,
+} from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -38,27 +44,43 @@ const Navbar = () => {
           className="menu menu-sm dropdown-content mt-3 z-[1] p-4 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <Link className="text-lg font-white hover:text-green-500 transition-all duration-300" to="/">
+            <Link
+              className="text-lg font-white hover:text-green-500 transition-all duration-300"
+              to="/"
+            >
               <FaHome className="mr-2 inline-block" /> Home
             </Link>
           </li>
           <li>
-            <Link className="text-lg font-medium hover:text-green-500 transition-all duration-300" to="about">
+            <Link
+              className="text-lg font-medium hover:text-green-500 transition-all duration-300"
+              to="about"
+            >
               <FaUserAlt className="mr-2 inline-block" /> About
             </Link>
           </li>
           <li>
-            <Link className="text-lg font-medium hover:text-green-500 transition-all duration-300" to="project">
+            <Link
+              className="text-lg font-medium hover:text-green-500 transition-all duration-300"
+              to="project"
+            >
               <FaProjectDiagram className="mr-2 inline-block" /> Project
             </Link>
           </li>
           <li>
-            <Link className="text-lg font-medium hover:text-green-500 transition-all duration-300" to="contact">
+            <Link
+              className="text-lg font-medium hover:text-green-500 transition-all duration-300"
+              to="contact"
+            >
               <FaPhone className="mr-2 inline-block" /> Contact
             </Link>
           </li>
           <li>
-            <Button title="GitHub" icon={FaGithub} link="https://github.com/haadjs" />
+            <Button
+              title="GitHub"
+              icon={FaGithub}
+              link="https://github.com/haadjs"
+            />
           </li>
         </ul>
       </div>
@@ -94,13 +116,19 @@ const Navbar = () => {
                              before:transition-all before:duration-500 hover:before:w-full"
                 >
                   {icon}
-                  {route === "/" ? "Home" : route.charAt(0).toUpperCase() + route.slice(1)}
+                  {route === "/"
+                    ? "Home"
+                    : route.charAt(0).toUpperCase() + route.slice(1)}
                 </Link>
               </li>
             );
           })}
           <li>
-            <Button title="GitHub" icon={FaGithub} link="https://github.com/haadjs" />
+            <Button
+              title="GitHub"
+              icon={FaGithub}
+              link="https://github.com/haadjs"
+            />
           </li>
         </ul>
       </div>
