@@ -23,8 +23,8 @@ const Home = () => {
           className="max-w-2xl space-y-6 text-center md:text-left z-10"
           data-aos="fade-right"
         >
-          <div className="text-xl text-gray-300 border border-purple-500 w-90 mx-auto md:mx-0 text-center font-bold rounded-full py-2 bg-opacity-5 backdrop-blur">
-            Hi 👋 I'm{" "}
+          <div className="text-xl mt-3 text-gray-300 border border-purple-500 w-90 mx-auto md:mx-0 text-center font-bold rounded-full py-2 bg-opacity-5 backdrop-blur">
+            Hi👋 I'M{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400 font-extrabold text-4xl">
               {"Haad Sheikh"}
             </span>
