@@ -25,15 +25,15 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
+              className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400"
               fill="none"
               viewBox="0 0 24 24"
-              stroke="currentColor"
+              stroke="white"
+              strokeWidth={1}
             >
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="2"
                 d="M4 6h16M4 12h16M4 18h16"
               />
             </svg>

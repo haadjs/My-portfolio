@@ -53,7 +53,7 @@ const Projects = () => {
       </div>
 
       <div
-        className="grid gap-8 sm:grid-cols-1 flex justify-center md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        className="grid gap-8 sm:grid-cols-1 flex justify-center flex-wrap md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
         data-aos="fade-up"
       >
         {projects.map((pro) => (
