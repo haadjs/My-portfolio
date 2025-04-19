@@ -18,7 +18,7 @@ const Contact = () => {
   return (
     <>
       {/* Contact Section */}
-      <div className="min-h-screen bg-gradient-to-br from-green-800 via-green-900 to-black text-white px-6 md:px-16 py-16">
+      <div className="min-h-screen bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] text-white px-6 md:px-16 py-16">
         <div className="mt-10 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Contact Info */}
           <div className="flex-1 space-y-6" data-aos="fade-right">

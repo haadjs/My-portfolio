@@ -15,21 +15,19 @@ const About = () => {
   return (
     <>
       {/* About Section */}
-      <div className="min-h-screen bg-gradient-to-br from-green-800 via-green-900 to-black text-white px-6 md:px-16 py-16">
+      <div className="min-h-screen bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] text-white px-6 md:px-16 py-16">
         <div className="mt-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Text Section */}
           <div className="flex-1 space-y-6" data-aos="fade-right">
             <h1 className="text-3xl md:text-4xl font-bold text-amber-300 mb-4">
-              Who I&apos;M ?
+              Who I&apos;m?
             </h1>
 
             <p className="text-lg text-gray-200 leading-relaxed">
               Asalam o Alaikum, I&apos;m{" "}
               <span className="text-green-300 font-semibold">Haad Sheikh</span>{" "}
               from Karachi, Pakistan. I am a passionate{" "}
-              <span className="text-amber-300 font-semibold">
-                MERN Stack Developer
-              </span>{" "}
+              <span className="text-amber-300 font-semibold">MERN Stack Developer</span>{" "}
               currently studying at{" "}
               <span className="text-emerald-300 font-semibold">SMIT</span>. I
               love building dynamic web and mobile applications using modern
@@ -72,7 +70,6 @@ const About = () => {
       </div>
 
       {/* Skill Section */}
-
       <SkillCards />
     </>
   );

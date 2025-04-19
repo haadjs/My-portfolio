@@ -32,7 +32,7 @@ const skills = [
 
 const SkillCards = () => {
   return (
-    <div className="bg-gradient-to-br from-green-900 via-black to-green-800  py-16 text-white">
+    <div className="bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] py-16 text-white">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-12">
           LOOK WHAT I HAVE LEARNED
