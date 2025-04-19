@@ -21,9 +21,9 @@ const Contact = () => {
       <div className="min-h-screen bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] text-white px-6 md:px-16 py-16">
         <div className="mt-10 max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Contact Info */}
-          <div className="flex-1 space-y-6" data-aos="fade-right">
-            <h1 className="text-3xl md:text-4xl font-bold text-amber-300 mb-4">
-              Get in Touch
+          <div className="flex-1 space-y-6 " data-aos="fade-right">
+            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg  mb-4">
+              Get In Touch
             </h1>
 
             <p className="text-lg text-gray-200 leading-relaxed">
@@ -49,7 +49,7 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="flex-1" data-aos="fade-left">
+          <div className="flex-1 shadow-[0_0_20px_5px_rgba(168,85,247,0.4)] mt-2 " data-aos="fade-left">
             <form className="bg-white/10 p-6 rounded-xl shadow-lg space-y-4">
               <input
                 type="text"

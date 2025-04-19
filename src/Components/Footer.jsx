@@ -10,9 +10,15 @@ const Footer = () => {
           {/* Footer Logo / Name */}
           <div className="text-center md:text-left mb-4 md:mb-0">
             <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-500 to-lime-200">
-              Haad<span className="text-black"> Sheikh</span>
+              Haad
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg ">
+                {" "}
+                Sheikh
+              </span>
             </h2>
-            <p className="text-gray-400 mt-2">MERN Stack Developer</p>
+            <p className="text-gray-400 mt-2 font-bold font-serif">
+              MERN Stack Developer
+            </p>
           </div>
 
           {/* Footer Links */}

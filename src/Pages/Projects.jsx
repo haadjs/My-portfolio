@@ -46,7 +46,7 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] text-white px-6 md:px-16 py-16">
       <div className="text-center mt-20 mb-12" data-aos="fade-down">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-amber-300">My Activities</h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg">My Activities</h1>
         <p className="text-gray-300 mt-2">A showcase of my latest projects</p>
       </div>
 

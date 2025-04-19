@@ -19,12 +19,12 @@ const About = () => {
         <div className="mt-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
           {/* Text Section */}
           <div className="flex-1 space-y-6" data-aos="fade-right">
-            <h1 className="text-3xl md:text-4xl font-bold text-amber-300 mb-4">
-              Who I&apos;m?
+            <h1 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg mb-4">
+              Who I AM?
             </h1>
 
             <p className="text-lg text-gray-200 leading-relaxed">
-              Asalam o Alaikum, I&apos;m{" "}
+              Assalam o Alaikum, I&apos;m{" "}
               <span className="text-green-300 font-semibold">Haad Sheikh</span>{" "}
               from Karachi, Pakistan. I am a passionate{" "}
               <span className="text-amber-300 font-semibold">MERN Stack Developer</span>{" "}
@@ -35,7 +35,7 @@ const About = () => {
             </p>
 
             <div>
-              <h2 className="text-2xl font-semibold text-amber-200 mb-4">
+              <h2 className="text-2xl font-semibold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg mb-4">
                 Activities I Enjoy:
               </h2>
               <div className="space-y-4 text-gray-300">
@@ -57,7 +57,7 @@ const About = () => {
 
           {/* Image Section */}
           <div className="flex-1 flex justify-center" data-aos="zoom-in">
-            <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden shadow-2xl border-4 border-amber-400 hover:scale-105 transition-transform duration-300">
+            <div className="relative w-72 h-72 md:w-80 md:h-80 rounded-full overflow-hidden  border-4 border-purple-500 shadow-[0_0_20px_5px_rgba(168,85,247,0.4)] hover:scale-105 transition-transform duration-300">
               <img
                 src={image}
                 alt="Haad Sheikh"

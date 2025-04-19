@@ -33,20 +33,22 @@ const skills = [
 const SkillCards = () => {
   return (
     <div className="bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] py-16 text-white">
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold text-center text-amber-300 mb-12">
+      <div className="max-w-6xl mx-auto px-4">
+        <h1 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-pink-800 via-purple-400 to-blue-800 bg-clip-text text-transparent drop-shadow-lg mb-12">
           LOOK WHAT I HAVE LEARNED
         </h1>
 
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-x-6 gap-y-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center border border-amber-400 p-4 rounded-xl shadow-md transition-transform hover:scale-110 hover:border-emerald-400 duration-300 text-center"
+              className="flex flex-col items-center justify-center border border-amber-400 p-6 rounded-xl shadow-md transition-transform hover:scale-110 hover:border-emerald-400 duration-300 text-center min-h-[140px]"
               title={skill.name}
             >
-              <div className="text-5xl mb-2">{skill.icon}</div>
-              <span className="text-base font-semibold text-gray-200">{skill.name}</span>
+              <div className="text-5xl mb-3">{skill.icon}</div>
+              <span className="text-sm md:text-base font-semibold text-gray-200">
+                {skill.name}
+              </span>
             </div>
           ))}
         </div>

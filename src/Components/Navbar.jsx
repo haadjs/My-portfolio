@@ -1,7 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Button from "./Button";
-import { FaGithub, FaHome, FaUserAlt, FaProjectDiagram, FaPhone } from "react-icons/fa";
+import {
+  FaGithub,
+  FaHome,
+  FaUserAlt,
+  FaProjectDiagram,
+  FaPhone,
+} from "react-icons/fa";
 
 const Navbar = () => {
   return (
@@ -9,7 +15,7 @@ const Navbar = () => {
       <div className="flex-1 flex items-center justify-between">
         <Link
           to="/"
-          className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-500 to-lime-200 drop-shadow-md animate-pulse transition-all duration-500"
+          className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400  drop-shadow-md animate-pulse transition-all duration-500"
         >
           Haad<span className="text-black">..</span>
         </Link>
