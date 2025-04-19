@@ -25,7 +25,7 @@ const Navbar = () => {
           <label tabIndex={0} className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400"
+              className="h-6 w-6 text-white" // ✅ Changed here
               fill="none"
               viewBox="0 0 24 24"
               stroke="white"
