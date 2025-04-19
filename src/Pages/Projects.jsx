@@ -46,15 +46,20 @@ const Projects = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] text-white px-6 md:px-16 py-16">
       <div className="text-center mt-20 mb-12" data-aos="fade-down">
-        <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg">My Activities</h1>
+        <h1 className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg">
+          My Activities
+        </h1>
         <p className="text-gray-300 mt-2">A showcase of my latest projects</p>
       </div>
 
-      <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3 place-items-center" data-aos="fade-up">
+      <div
+        className="grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        data-aos="fade-up"
+      >
         {projects.map((pro) => (
           <div
             key={pro.title}
-            className="bg-white/10 p-6 rounded-2xl shadow-lg backdrop-blur-md hover:scale-105 transition-transform duration-300 hover:shadow-xl"
+            className="w-full hover:scale-100 transition duration-400 hover:shadow-xl"
             data-aos="zoom-in"
           >
             <Card

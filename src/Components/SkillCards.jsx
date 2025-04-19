@@ -34,7 +34,7 @@ const SkillCards = () => {
   return (
     <div className="bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] py-16 text-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-3xl md:text-4xl font-bold text-center bg-gradient-to-r from-pink-800 via-purple-400 to-blue-800 bg-clip-text text-transparent drop-shadow-lg mb-12">
+        <h1 className="text-3xl md:text-4xl font-bold text-center text-blue-400 mb-12">
           LOOK WHAT I HAVE LEARNED
         </h1>
 
@@ -42,7 +42,7 @@ const SkillCards = () => {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center border border-amber-400 p-6 rounded-xl shadow-md transition-transform hover:scale-110 hover:border-emerald-400 duration-300 text-center min-h-[140px]"
+              className="flex flex-col items-center justify-center border border-purple-500 p-6 rounded-xl shadow-md transition-transform hover:scale-110 hover:border-purple-800 duration-300 text-center min-h-[140px]"
               title={skill.name}
             >
               <div className="text-5xl mb-3">{skill.icon}</div>

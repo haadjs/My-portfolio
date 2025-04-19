@@ -11,7 +11,7 @@ import {
 
 const Navbar = () => {
   return (
-    <div className="container mx-auto navbar fixed top-0 z-50 px-6 py-4 backdrop-blur-md bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B]">
+    <div className=" mx-auto navbar fixed top-0 z-50 px-6  backdrop-blur-md bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B]">
       <div className="flex-1 flex items-center justify-between">
         <Link
           to="/"
@@ -124,12 +124,7 @@ const Navbar = () => {
               );
             })}
             <li>
-              <Button
-                title="GitHub"
-                icon={FaGithub}
-                link="https://github.com/haadjs"
-                className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-green-500 transition-all duration-300 transform hover:scale-110"
-              />
+              <Button title={'Github'} className="border-2 text-purple-600 border-purple-700" icon={FaGithub} />
             </li>
           </ul>
         </div>

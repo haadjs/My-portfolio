@@ -12,31 +12,24 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="bg-gradient-to-br from-[#0F0F1C] via-[#14142B] to-[#1C1C3B] text-white font-sans overflow-x-hidden">
+    <div className="bg-[#0F0F1C] text-white font-sans overflow-x-hidden">
       {/* Hero Section */}
-      <div className="min-h-screen px-6 md:px-16 py-20 flex flex-col md:flex-row items-center justify-between relative">
-        {/* Glowing Background Element */}
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-700 via-pink-500 to-blue-500 opacity-20 rounded-full blur-3xl z-0"></div>
-
+      <section className="min-h-screen px-6 md:px-16 py-20 flex flex-col md:flex-row items-center justify-between max-w-7xl mx-auto">
         {/* Text */}
-        <div
-          className="max-w-2xl space-y-6 text-center md:text-left z-10"
-          data-aos="fade-right"
-        >
-          <div className="text-xl mt-3 text-gray-300 border border-purple-500 w-90 mx-auto md:mx-0 text-center font-bold rounded-full py-2 bg-opacity-5 backdrop-blur">
-            Hi👋 I'M{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400 font-extrabold text-4xl">
-              {"Haad Sheikh"}
-            </span>
+        <div className="max-w-2xl space-y-6 text-center md:text-left" data-aos="fade-right">
+          <div className="inline-block border border-purple-500 px-6 py-2 rounded-full bg-white/5 backdrop-blur text-sm sm:text-base text-gray-300 font-semibold">
+            Hi 👋 I'M{" "}
+            <span className="text-purple-400 text-xl sm:text-3xl font-bold">Haad Sheikh</span>
           </div>
-          <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg mt-4">
+
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-md">
             Judges a book by its Cover...
           </h1>
 
           <p className="text-gray-400 text-lg">
-            MERN Stack Developer & UI/UX Enthusiast dedicated to crafting
-            meaningful, efficient, and visually engaging digital solutions.
+            MERN Stack Developer & UI/UX Enthusiast dedicated to crafting meaningful, efficient, and visually engaging digital solutions.
           </p>
+
           <h2 className="text-2xl md:text-3xl font-medium text-white">
             <Typewriter
               words={[
@@ -55,54 +48,42 @@ const Home = () => {
         </div>
 
         {/* Image */}
-        <div className="mt-10 md:mt-0 z-10 self-center" data-aos="fade-left">
-          <div className="relative w-96 h-96 md:w-[450px] md:h-[450px] rounded-full overflow-hidden border-[4px] border-purple-500 shadow-[0_0_30px_8px_rgba(168,85,247,0.4)] hover:scale-105 transition duration-300">
-            <img
-              src={webp}
-              alt="Profile"
-              className="w-full h-full object-cover"
-            />
+        <div className="mt-12 md:mt-0" data-aos="fade-left">
+          <div className="w-72 h-72 sm:w-96 sm:h-96 rounded-full overflow-hidden border-2 border-purple-400 shadow-lg hover:scale-105 transition duration-300">
+            <img src={webp} alt="Profile" className="w-full h-full object-cover" />
           </div>
         </div>
-      </div>
+      </section>
 
       {/* About Section */}
-      <div
-        className="py-24 px-6 md:px-16 bg-gradient-to-br from-[#14142B] to-[#0F0F1C]"
-        data-aos="fade-up"
-      >
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 mb-6">
+      <section className="py-24 px-6 md:px-16 bg-[#14142B]" data-aos="fade-up">
+        <div className="max-w-4xl mx-auto text-center space-y-6">
+          <h2 className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
             LET ME INTRODUCE MYSELF
           </h2>
-          <p className="text-gray-300 mb-4 leading-relaxed">
-            I'm a self-taught MERN Stack Developer with a passion for building
-            full-stack web applications that merge function with form.
+          <p className="text-gray-300">
+            I'm a self-taught MERN Stack Developer with a passion for building full-stack web applications that merge function with form.
           </p>
-          <p className="text-pink-300 mb-4 leading-relaxed">
-            Since 2024, I’ve focused on crafting real-world projects and solving
-            complex problems through modern, scalable solutions.
+          <p className="text-pink-300">
+            Since 2024, I’ve focused on crafting real-world projects and solving complex problems through modern, scalable solutions.
           </p>
-          <p className="text-gray-400 leading-relaxed">
-            Tech Stack: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB,
-            Firebase, Tailwind CSS & more.
+          <p className="text-gray-400">
+            Tech Stack: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Firebase, Tailwind CSS & more.
           </p>
-        </div>
 
-        <div className="flex justify-center mt-12">
-          <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-pink-500 shadow-[0_0_25px_#ec4899]">
-            <img src={png} alt="Self" className="w-full h-full object-cover" />
+          <div className="mt-10 flex justify-center">
+            <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-pink-500 shadow-md">
+              <img src={png} alt="Self" className="w-full h-full object-cover" />
+            </div>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Work Experience Section */}
-      <div className="py-24 px-6 md:px-16 bg-gradient-to-br from-[#0F0F1C] via-[#1A1A2E] to-[#0F0F1C]">
+      <section className="py-24 px-6 md:px-16 bg-[#0F0F1C]">
         <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-4xl font-bold text-blue-400 mb-2">
-            Work Experience
-          </h2>
-          <p className="text-sm text-gray-400">
+          <h2 className="text-4xl font-bold text-blue-400">Work Experience</h2>
+          <p className="text-sm text-gray-400 mt-2">
             MERN Stack Developer (Self-taught) | Jan 2023 – Present
           </p>
         </div>
@@ -128,35 +109,28 @@ const Home = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="bg-white bg-opacity-5 border border-white border-opacity-10 backdrop-blur-md p-6 rounded-xl shadow-lg hover:shadow-pink-500/30 transition"
+              className="bg-white/5 border border-white/10 backdrop-blur p-6 rounded-xl shadow-md hover:shadow-pink-400/20 transition"
               data-aos="zoom-in"
             >
-              <h3 className="text-xl font-semibold text-purple-300 mb-2">
-                {item.title}
-              </h3>
+              <h3 className="text-lg font-semibold text-purple-200 mb-2">{item.title}</h3>
               <p className="text-gray-400 text-sm">{item.desc}</p>
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
       {/* Contact Section */}
-      <div className="py-24 bg-[#0F0F1C] text-center relative overflow-hidden">
-        <div className="absolute -bottom-24 right-0 p-1 w-96 h-96 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-20 rounded-full blur-3xl z-0"></div>
+      <section className="py-24 bg-[#0F0F1C] text-center relative overflow-hidden">
+        <div className="absolute -bottom-24 right-0 w-96 h-96 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-20 rounded-full blur-3xl z-0"></div>
 
-        <h2
-          className="text-4xl font-bold text-pink-400 mb-4"
-          data-aos="fade-up"
-        >
+        <h2 className="text-4xl font-bold text-pink-400 mb-4" data-aos="fade-up">
           Open to Collaborations & Opportunities!
         </h2>
         <p className="text-gray-400 mb-6" data-aos="fade-up">
           Let’s connect and build something impactful together.
         </p>
-        <div
-          className="flex justify-center gap-8 text-3xl z-10 relative"
-          data-aos="zoom-in"
-        >
+
+        <div className="flex justify-center gap-8 text-3xl z-10 relative" data-aos="zoom-in">
           <a
             href="https://www.instagram.com/haad._glimpse._/"
             target="_blank"
@@ -182,7 +156,7 @@ const Home = () => {
             <FaLinkedin />
           </a>
         </div>
-      </div>
+      </section>
     </div>
   );
 };
