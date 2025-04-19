@@ -120,7 +120,7 @@ const Home = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-[#0F0F1C] text-center relative overflow-hidden">
+      <section className="py-24 bg-[#0F0F1C] text-center relative overflow-hidden p-3">
         <div className="absolute -bottom-24 right-0 w-96 h-96 bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 opacity-20 rounded-full blur-3xl z-0"></div>
 
         <h2 className="text-4xl font-bold text-pink-400 mb-4" data-aos="fade-up">
