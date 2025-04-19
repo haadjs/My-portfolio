@@ -18,11 +18,12 @@ const Home = () => {
         {/* Glowing Background Element */}
         <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-br from-purple-700 via-pink-500 to-blue-500 opacity-20 rounded-full blur-3xl z-0"></div>
 
+        {/* Text */}
         <div
           className="max-w-2xl space-y-6 text-center md:text-left z-10"
           data-aos="fade-right"
         >
-          <div className="text-xl text-gray-300 border border-purple-500 w-90 mx-auto md:mx-0 text-center font-bold rounded-full py-2  bg-opacity-5 backdrop-blur">
+          <div className="text-xl text-gray-300 border border-purple-500 w-90 mx-auto md:mx-0 text-center font-bold rounded-full py-2 bg-opacity-5 backdrop-blur">
             Hi 👋 I'm{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-blue-400 font-extrabold text-4xl">
               {"Haad Sheikh"}
@@ -53,8 +54,9 @@ const Home = () => {
           </h2>
         </div>
 
-        <div className="mt-10 md:mt-0 z-10" data-aos="fade-left">
-          <div className="relative w-72 h-72 rounded-full overflow-hidden border-[3px] border-purple-500 shadow-[0_0_20px_5px_rgba(168,85,247,0.4)] hover:scale-105 transition duration-300">
+        {/* Image */}
+        <div className="mt-10 md:mt-0 z-10 self-center" data-aos="fade-left">
+          <div className="relative w-96 h-96 md:w-[450px] md:h-[450px] rounded-full overflow-hidden border-[4px] border-purple-500 shadow-[0_0_30px_8px_rgba(168,85,247,0.4)] hover:scale-105 transition duration-300">
             <img
               src={webp}
               alt="Profile"

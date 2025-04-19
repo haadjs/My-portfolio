@@ -9,9 +9,9 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Footer Logo / Name */}
           <div className="text-center md:text-left mb-4 md:mb-0">
-            <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-500 to-lime-200">
+            <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400">
               Haad
-              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg ">
+              <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent drop-shadow-lg">
                 {" "}
                 Sheikh
               </span>
@@ -23,30 +23,25 @@ const Footer = () => {
 
           {/* Footer Links */}
           <div className="flex flex-col md:flex-row gap-6 items-center">
-            <Link
-              to="/"
-              className="text-lg text-emerald-500 hover:text-lime-500 transition-all duration-300 transform hover:scale-105"
-            >
-              <FaHome className="mr-2 inline-block" /> Home
-            </Link>
-            <Link
-              to="about"
-              className="text-lg text-emerald-500 hover:text-lime-500 transition-all duration-300 transform hover:scale-105"
-            >
-              <FaUserAlt className="mr-2 inline-block" /> About
-            </Link>
-            <Link
-              to="project"
-              className="text-lg text-emerald-500 hover:text-lime-500 transition-all duration-300 transform hover:scale-105"
-            >
-              <FaProjectDiagram className="mr-2 inline-block" /> Project
-            </Link>
-            <Link
-              to="contact"
-              className="text-lg text-emerald-500 hover:text-lime-500 transition-all duration-300 transform hover:scale-105"
-            >
-              <FaPhone className="mr-2 inline-block" /> Contact
-            </Link>
+            {[
+              { to: "/", icon: <FaHome />, label: "Home" },
+              { to: "about", icon: <FaUserAlt />, label: "About" },
+              { to: "project", icon: <FaProjectDiagram />, label: "Project" },
+              { to: "contact", icon: <FaPhone />, label: "Contact" },
+            ].map((item, index) => (
+              <Link
+                key={index}
+                to={item.to}
+                className="relative text-lg transition-all duration-300 hover:scale-105"
+              >
+                <span className="mr-2 inline-block text-emerald-400">
+                  {item.icon}
+                </span>
+                <span className="relative bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 bg-clip-text text-transparent font-semibold after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 after:transition-all after:duration-300 hover:after:w-full">
+                  {item.label}
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
 

@@ -15,7 +15,7 @@ const Navbar = () => {
       <div className="flex-1 flex items-center justify-between">
         <Link
           to="/"
-          className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400  drop-shadow-md animate-pulse transition-all duration-500"
+          className="text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 drop-shadow-md animate-pulse transition-all duration-500"
         >
           Haad<span className="text-black">..</span>
         </Link>
@@ -44,7 +44,7 @@ const Navbar = () => {
           >
             <li>
               <Link
-                className="text-lg font-medium hover:text-green-500 transition-all duration-300 transform hover:scale-105"
+                className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-green-500 transition-all duration-300 transform hover:scale-105"
                 to="/"
               >
                 <FaHome className="mr-2 inline-block" /> Home
@@ -52,7 +52,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                className="text-lg font-medium hover:text-green-500 transition-all duration-300 transform hover:scale-105"
+                className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-green-500 transition-all duration-300 transform hover:scale-105"
                 to="about"
               >
                 <FaUserAlt className="mr-2 inline-block" /> About
@@ -60,7 +60,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                className="text-lg font-medium hover:text-green-500 transition-all duration-300 transform hover:scale-105"
+                className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-green-500 transition-all duration-300 transform hover:scale-105"
                 to="project"
               >
                 <FaProjectDiagram className="mr-2 inline-block" /> Project
@@ -68,7 +68,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                className="text-lg font-medium hover:text-green-500 transition-all duration-300 transform hover:scale-105"
+                className="text-lg font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-green-500 transition-all duration-300 transform hover:scale-105"
                 to="contact"
               >
                 <FaPhone className="mr-2 inline-block" /> Contact
@@ -79,7 +79,7 @@ const Navbar = () => {
                 title="GitHub"
                 icon={FaGithub}
                 link="https://github.com/haadjs"
-                className="text-lg font-semibold text-gray-800 hover:text-green-500 transition-all duration-300 transform hover:scale-110"
+                className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-purple-900 transition-all duration-300 transform hover:scale-110"
               />
             </li>
           </ul>
@@ -110,9 +110,9 @@ const Navbar = () => {
                 <li key={i}>
                   <Link
                     to={route}
-                    className="relative text-lg font-semibold text-emerald-500 hover:text-lime-500 transition-all duration-300 transform hover:scale-110 
+                    className="relative text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-purple-300 transition-all duration-300 transform hover:scale-110 
                                before:content-[''] before:absolute before:-bottom-1 before:left-0 before:h-[2px] 
-                               before:w-0 before:bg-gradient-to-r before:from-green-500 before:to-lime-400 
+                               before:w-0 before:bg-gradient-to-r before:from-pink-500 before:via-purple-500 before:to-blue-400 
                                before:transition-all before:duration-500 hover:before:w-full"
                   >
                     {icon}
@@ -128,7 +128,7 @@ const Navbar = () => {
                 title="GitHub"
                 icon={FaGithub}
                 link="https://github.com/haadjs"
-                className="text-lg font-semibold text-gray-800 hover:text-green-500 transition-all duration-300 transform hover:scale-110"
+                className="text-lg font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-blue-400 hover:text-green-500 transition-all duration-300 transform hover:scale-110"
               />
             </li>
           </ul>
