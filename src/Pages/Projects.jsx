@@ -2,12 +2,20 @@ import React, { useEffect } from "react";
 import dice from "../assets/Dice .png";
 import todo from "../assets/todo.png";
 import blog from "../assets/blog.png";
+import Blog2 from "../assets/Screenshot 2025-04-27 215929.png";
 import quiz from "../assets/quiz.png";
 import Card from "../Components/Card";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
 let projects = [
+  {
+    title: "Blog App React",
+    description: "React-based Blog App using Firebase Auth/Database.",
+    image: Blog2,
+    live: "https://blogg-app-tech.vercel.app/",
+    code: "https://github.com/haadjs/Blogg-App-tech",
+  },
   {
     title: "Dice Game",
     description: "React-based dice game using number matching strategy.",
@@ -24,7 +32,8 @@ let projects = [
   },
   {
     title: "Blog App",
-    description: "Full blog system with dashboard using HTML, CSS, JS & Firebase.",
+    description:
+      "Full blog system with dashboard using HTML, CSS, JS & Firebase.",
     image: blog,
     live: "https://blog-app-nine-indol.vercel.app/",
     code: "https://github.com/haadjs/blog-app",
@@ -52,14 +61,15 @@ const Projects = () => {
         <p className="text-gray-300 mt-2">A showcase of my latest projects</p>
       </div>
 
+      {/* Grid setup */}
       <div
-        className="grid gap-8 sm:grid-cols-1 flex justify-center flex-wrap md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+        className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center"
         data-aos="fade-up"
       >
         {projects.map((pro) => (
           <div
             key={pro.title}
-            className="w-full hover:scale-100 transition duration-400 hover:shadow-xl"
+            className="w-full max-w-sm hover:scale-105 transition-transform duration-300 hover:shadow-2xl"
             data-aos="zoom-in"
           >
             <Card
