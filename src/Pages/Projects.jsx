@@ -63,7 +63,7 @@ const Projects = () => {
 
       {/* Grid setup */}
       <div
-        className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center"
+        className="grid gap-20 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center"
         data-aos="fade-up"
       >
         {projects.map((pro) => (
