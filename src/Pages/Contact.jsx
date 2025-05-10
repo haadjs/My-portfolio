@@ -101,7 +101,7 @@ const Contact = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://github.com/haadjs"
+            href="https://github.com/HaadSheikh"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-300 hover:text-white transition"
