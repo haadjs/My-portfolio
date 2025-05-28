@@ -93,7 +93,7 @@ const Contact = () => {
             <FaLinkedinIn />
           </a>
           <a
-            href="https://www.instagram.com/haad._glimpse._/"
+            href="https://www.instagram.com/sheikhhaad_/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-500 hover:text-pink-400 transition"

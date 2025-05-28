@@ -132,7 +132,7 @@ const Home = () => {
 
         <div className="flex justify-center gap-8 text-3xl z-10 relative" data-aos="zoom-in">
           <a
-            href="https://www.instagram.com/haad._glimpse._/"
+            href="https://www.instagram.com/sheikhhaad_/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-pink-500 hover:scale-110 hover:text-pink-300 transition"
