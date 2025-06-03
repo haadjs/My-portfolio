@@ -30,6 +30,10 @@ let router = createBrowserRouter([
         path:'project',
         element :<Projects />
       },
+      {
+        path:'projects',
+        element :<Projects />
+      },
     ]
   }
 ])
