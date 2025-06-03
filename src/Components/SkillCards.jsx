@@ -37,9 +37,9 @@ const SkillCards = () => {
       <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-purple-500/20 rounded-full filter blur-[120px] opacity-20"></div>
       <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-pink-500/20 rounded-full filter blur-[120px] opacity-20"></div>
       <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiMyMjIiIGZpbGwtb3BhY2l0eT0iMC40Ij48cGF0aCBkPSJNMzYgMzRjMC0yIDItNCAyLTRzLTItMi00LTJsLTIgMnYtNGw0LTQgMiAyIDItMi0yLTItMiAyLTQtNCAyLTItMi0yaC00bDIgMi0yIDItMi0ydjRsMiAyIDQgNC00IDQgMiAyeiIvPjwvZz48L2c+PC9zdmc+')] opacity-5"></div>
-      
+
       <div className="max-w-6xl mx-auto px-4 relative z-10">
-        <h1 
+        <h1
           className="text-4xl md:text-5xl font-bold text-center mb-16"
           data-aos="fade-down"
         >
@@ -48,7 +48,7 @@ const SkillCards = () => {
           </span>
         </h1>
 
-        <div 
+        <div
           className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 md:gap-8"
           data-aos="fade-up"
           data-aos-delay="200"
@@ -66,17 +66,18 @@ const SkillCards = () => {
               <h3 className="text-sm font-medium text-gray-300 group-hover:text-white transition-colors duration-300">
                 {skill.name}
               </h3>
-              
+
               {/* Decorative dot */}
               <div className="absolute -bottom-1 -right-1 w-2 h-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
           ))}
         </div>
-        
+
         {/* Additional decorative element from Figma */}
         <div className="mt-20 text-center" data-aos="fade-up">
           <p className="text-gray-400 italic text-sm max-w-2xl mx-auto">
-            "Continuously expanding my skill set to create more innovative and efficient solutions."
+            "Continuously expanding my skill set to create more innovative and
+            efficient solutions."
           </p>
         </div>
       </div>

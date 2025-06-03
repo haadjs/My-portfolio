@@ -144,7 +144,9 @@ const Navbar = () => {
               >
                 <span
                   className={`w-1.5 h-1.5 rounded-full mr-2 ${
-                    isActive("/project") || isActive("/projects") ? "bg-purple-500" : "bg-transparent"
+                    isActive("/project") || isActive("/projects")
+                      ? "bg-purple-500"
+                      : "bg-transparent"
                   }`}
                 ></span>
                 <FaProjectDiagram className="mr-2" /> Projects
